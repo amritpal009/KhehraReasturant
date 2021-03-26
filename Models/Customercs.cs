@@ -7,12 +7,12 @@ namespace KhehraReasturant.Models
 {
     public class Customercs
     {
-        public int ID { get; set; }
-        public string FirstName { get; set; }
-        public string Surname { get; set; }
+        public int ID { get; set; }//primary key
+        public string FirstName { get; set; }//first name of customer
+        public string Surname { get; set; }//surname name of customer
 
-        public int Phone { get; set; }
-        public string Address { get; set; }
-        public ICollection<Order> Orders { get; set; }
+        public int Phone { get; set; }//phone of customer
+        public string Address { get; set; }//address of customer
+        public ICollection<Order> Orders { get; set; }//add icollection
     }
 }

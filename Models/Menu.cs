@@ -7,12 +7,12 @@ namespace KhehraReasturant.Models
 {
     public class Menu
     {
-        public int ID { get; set; }
+        public int ID { get; set; }//primary key
 
-        public string DishName { get; set; }
-        public string DitearyRestrictions { get; set; }
-        public int Price { get; set; }
-        public int Rating { get; set; }
-        public ICollection<Order> Orders { get; set; }
+        public string DishName { get; set; }//name of dish
+        public string DitearyRestrictions { get; set; }//ditearyrestrictions
+        public int Price { get; set; }//price of menu
+        public int Rating { get; set; }//rating of menu
+        public ICollection<Order> Orders { get; set; }//add relation
     }
 }
